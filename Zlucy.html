@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mami</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Zmami.css">
+</head>
+<body>
+    <div class="card">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="Mamí.jpg" style="width: 305px; height: 400px;">
+        </div>
+        <div class="details">
+            <h4 class="color1">Para Mi Mami</h4>
+            <h4 class="color2 margin">Mi primera Y Tercera Madre</h4>
+            <p>Eres la madre de todos </p>
+            <p>Porque de algún modo criaste</p>
+            <p>A todos, gracias mami por ser</p>
+            <p>Mi otra madre y enseñarme que es</p>
+            <p>La verdadera humildad de una persona</p>
+            <p>Por consentirme con tanta comida</p>
+            <p>Y con tanto amor</p>
+            <p>Tal vez mucho hablen de ti</p>
+            <p>Pero pocos ya sea que caminen en </p>
+            <p>Dos o cuatro patas, sabemos</p>
+            <p>El inmenso corazon que tienes</p>
+            <br>
+            <p class="text-right">Te amo Mami</p>
+            <p class="text-right">⛧Zannian</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="custom-button" id="mostrarImagenes">Gracias Mami</button>
+    </div>
+    
+    <div id="overlay">
+        <div id="imagenes" style="display: none;">
+            <img src="lucy.jpeg" alt="Imagen 1" class="izquierda">
+            <img src="baxter.jpg" alt="Imagen 2" class="derecha">
+            <img src="loreta.jpg" alt="Imagen 2" class="derecha">
+        </div>
+    </div>
+
+<audio id="miAudio" autoplay>
+    <source src="y2meta.com - Ella es mi Abuela (128 kbps).mp3" type="audio/mpeg">
+    Tu navegador no soporta la etiqueta de audio.
+  </audio>
+
+  <script>
+    document.getElementById('mostrarImagenes').addEventListener('click', function() {
+        var imagenes = document.getElementById('imagenes');
+        var overlay = document.getElementById('overlay');
+        if (imagenes.style.display === 'none') {
+            imagenes.style.display = 'flex';
+            overlay.style.display = 'block';
+        } else {
+            imagenes.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    });
+    
+    
+    window.addEventListener('load', function() {
+        var miAudio = document.getElementById('miAudio');
+        miAudio.play();
+      });
+    </script>
+
+</body>
+</html>

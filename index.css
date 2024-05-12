@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+.cover {
+    position: relative;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 144, 184, 0.753); /* E8590B con opacidad */
+    color: #000000; /* Blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+	
+}
+
+.cover .overlay p {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+
+.item:hover .cover img {
+    transform: scale(1.1);
+}
+
+.item:hover .cover .overlay {
+    opacity: 1;
+}
+
+
+body {
+	background-color: black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mamá</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Zmamá.css">
+</head>
+<body>
+    <div class="card">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="nathan1.jpg" style="width: 305px; height: 400px;">
+        </div>
+        <div class="details">
+            <h4 class="color1">Para Mi Mamá</h4>
+            <p>Querida mamá</p>
+            <p>La quiero mucho con mi corazon</p>
+            <p>Lo que pase nada</p>
+            <p>Nos separara con amor</p>
+            <br>
+            <p class="text-right">Nathan</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="custom-button" id="mostrarImagenes">Gracias Mamá</button>
+    </div>
+    
+    <div id="overlay">
+        <div id="imagenes" style="display: none;">
+            <img src="Vicky.jpeg" alt="Imagen 1" class="izquierda">
+            <img src="greta.jpeg" alt="Imagen 2" class="derecha">
+            <img src="Zabrina.jpeg" alt="Imagen 2" class="derecha">
+        </div>
+    </div>
+
+<audio id="miAudio" autoplay>
+    <source src="nathan.mp3" type="audio/mpeg">
+    Tu navegador no soporta la etiqueta de audio.
+  </audio>
+
+  <script>
+    document.getElementById('mostrarImagenes').addEventListener('click', function() {
+        var imagenes = document.getElementById('imagenes');
+        var overlay = document.getElementById('overlay');
+        if (imagenes.style.display === 'none') {
+            imagenes.style.display = 'flex';
+            overlay.style.display = 'block';
+        } else {
+            imagenes.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    });
+    
+    
+    window.addEventListener('load', function() {
+        var miAudio = document.getElementById('miAudio');
+        miAudio.play();
+      });
+    </script>
+
+</body>
+</html>
